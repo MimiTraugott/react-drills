@@ -6,14 +6,15 @@ class App extends Component {
     super();
 
     this.state = {
-    drinks: ["Soda", "Milk", "Beer", "Wine", "Juice", "Tea" ]
+      horses: ["Vikki", "Misty", "Charlie", "Emma", "Alli"]
+    }
   }
-  }
-  render () {
-    let drinksToDisplay=this.state.drinks.map((element, index) => {
-      return <h1 key={index}>{element}</h1>;
-    });
-    return <div className="App">{drinksToDisplay}</div>
+
+
+  render (){
+    let horsesThatDied = this.state.horses.map((element, index) =>{return <h2 key={index}>{element}</h2>;
+  });
+  return <div className="App">{horsesThatDied}</div>
   }
 }
 export default App;
